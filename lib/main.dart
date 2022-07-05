@@ -10,7 +10,7 @@ void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   Constants.preferences = await SharedPreferences.getInstance();
   runApp(
-      GetMaterialApp(
+      const GetMaterialApp(
         debugShowCheckedModeBanner: false,
           home: MyApp()
       )
